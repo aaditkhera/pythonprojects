@@ -8,20 +8,6 @@ nr_letters = int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
-#Easy way where letters,symbols and numbers are in some particular order
-# password = ""
-# for char in range(0, nr_letters):
-#     password += random.choice(letters)
-#
-# for char in range(0, nr_symbols):
-#     password += random.choice(symbols)
-#
-# for char in range(0, nr_numbers):
-#     password += random.choice(numbers)
-#
-# print(password)
-
-#Hard way where everything is jumbled
 
 password_list = []
 for char in range(0, nr_letters):
@@ -40,5 +26,6 @@ print(password_list)
 password = ""
 for char in password_list:
     password += char
+
 
 print(f"Your password is: {password}")
